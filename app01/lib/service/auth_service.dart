@@ -34,7 +34,7 @@ class AuthService {
   Stream<LoginState> get onAuthStateChange => _onAuthStateChange.stream;
 
   final OpenIDConfiguration oic = OpenIDConfiguration(
-      'myclient', 'https://iamcoll.bancaetica.it/auth/realms/TestQueryDesk');
+      'myclient', '{baseUrl}/auth/realms/{realm}');
 
   final FlutterAppAuth _appAuth = const FlutterAppAuth();
 
