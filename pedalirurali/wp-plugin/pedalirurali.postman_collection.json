@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "484ceff9-db7d-40cf-8f25-821c20909718",
+		"name": "pedalirurali",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "categoria eventi bici",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.pedalirurali.com/wp-json/wp/v2/mec_category",
+					"protocol": "https",
+					"host": [
+						"www",
+						"pedalirurali",
+						"com"
+					],
+					"path": [
+						"wp-json",
+						"wp",
+						"v2",
+						"mec_category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/pr/v1/events/categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.pedalirurali.com/wp-json/pr/v1/events/categories",
+					"protocol": "https",
+					"host": [
+						"www",
+						"pedalirurali",
+						"com"
+					],
+					"path": [
+						"wp-json",
+						"pr",
+						"v1",
+						"events",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/pr/v1/events/locations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.pedalirurali.com/wp-json/pr/v1/events/locations",
+					"protocol": "https",
+					"host": [
+						"www",
+						"pedalirurali",
+						"com"
+					],
+					"path": [
+						"wp-json",
+						"pr",
+						"v1",
+						"events",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/pr/v1/events/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.pedalirurali.com/wp-json/pr/v1/events/list?location=30&category=24&type=permanent",
+					"protocol": "https",
+					"host": [
+						"www",
+						"pedalirurali",
+						"com"
+					],
+					"path": [
+						"wp-json",
+						"pr",
+						"v1",
+						"events",
+						"list"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "30"
+						},
+						{
+							"key": "category",
+							"value": "24"
+						},
+						{
+							"key": "month",
+							"value": "05",
+							"disabled": true
+						},
+						{
+							"key": "year",
+							"value": "2021",
+							"disabled": true
+						},
+						{
+							"key": "include",
+							"value": "2635",
+							"disabled": true
+						},
+						{
+							"key": "favorite",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "type",
+							"value": "permanent"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/pr/v1/events/metadata",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.pedalirurali.com/wp-json/pr/v1/events/metadata",
+					"protocol": "https",
+					"host": [
+						"www",
+						"pedalirurali",
+						"com"
+					],
+					"path": [
+						"wp-json",
+						"pr",
+						"v1",
+						"events",
+						"metadata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/pr/v1/events/organizer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.pedalirurali.com/wp-json/pr/v1/events/organizer",
+					"protocol": "https",
+					"host": [
+						"www",
+						"pedalirurali",
+						"com"
+					],
+					"path": [
+						"wp-json",
+						"pr",
+						"v1",
+						"events",
+						"organizer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/pr/v1/events/favorite",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://www.pedalirurali.com/wp-json/pr/v1/events/favorite?uid=luca.bonaldo.lb@gmail.com&pid=5678",
+					"protocol": "https",
+					"host": [
+						"www",
+						"pedalirurali",
+						"com"
+					],
+					"path": [
+						"wp-json",
+						"pr",
+						"v1",
+						"events",
+						"favorite"
+					],
+					"query": [
+						{
+							"key": "uid",
+							"value": "luca.bonaldo.lb@gmail.com"
+						},
+						{
+							"key": "pid",
+							"value": "5678"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/pr/v1/events/favorite Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.pedalirurali.com/wp-json/pr/v1/events/favorite?uid=luca.bonaldo.lb@gmail.com&pid=5678",
+					"protocol": "https",
+					"host": [
+						"www",
+						"pedalirurali",
+						"com"
+					],
+					"path": [
+						"wp-json",
+						"pr",
+						"v1",
+						"events",
+						"favorite"
+					],
+					"query": [
+						{
+							"key": "uid",
+							"value": "luca.bonaldo.lb@gmail.com"
+						},
+						{
+							"key": "pid",
+							"value": "5678"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

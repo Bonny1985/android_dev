@@ -1,0 +1,10 @@
+
+keytool -genkey -v -keystore pedalirurali.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias pedalirurali
+
+
+flutter build appbundle --build-name --build-number
+
+
+
+
+//SELECT * FROM pr_term_taxonomy as tt, pr_terms as t WHERE tt.term_id=t.term_id and tt.taxonomy='mec_location'
